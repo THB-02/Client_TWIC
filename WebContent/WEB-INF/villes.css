@@ -1,0 +1,24 @@
+table{
+	margin:auto;
+}
+
+.centrer{
+	display: flex;
+	justify-content: center;
+	
+}
+
+h1{
+	margin-bottom: 2rem;
+	margin-top:5rem;
+}
+
+.bouton{
+	margin: 3rem 15rem;
+}
+
+.boutonDistance{
+	margin-top:3rem;
+	width: 12rem;
+	margin-bottom:5rem;
+}

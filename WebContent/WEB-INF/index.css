@@ -1,0 +1,31 @@
+.container{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width: 65vw;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.form{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+h1{
+	margin-bottom: 4rem;
+}
+
+.villes{
+	margin-bottom: 2rem;
+}
+
+.bouton{
+	width: 8rem;
+}
+
+.boutonVilles{
+	margin-top:3rem;
+	width: 15rem;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+    id="WebApp_ID" version="3.1">
+    <display-name>Projet</display-name>
+    
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>Index</servlet-name>
+        <servlet-class>com.twic.servlets.Index</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>Villes</servlet-name>
+        <servlet-class>com.twic.servlets.Villes</servlet-class>
+    </servlet>
+    
+    
+    <servlet-mapping>
+        <servlet-name>Index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Villes</servlet-name>
+        <url-pattern>/villes</url-pattern>
+    </servlet-mapping>
+    
+    <jsp-config>
+  	<jsp-property-group>
+  		<url-pattern>*.jsp</url-pattern>
+  		<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+  	</jsp-property-group>
+  </jsp-config>
+</web-app>
