@@ -7,9 +7,6 @@ public class Operation {
 	}
 
 	public double calculDistance(String ville1, String ville2) {
-		System.out.println(ville1);
-		System.out.println(ville2);
-
 		String[] coordVille1 = ville1.split(",");
 		double lattitudeVille1 = Double.parseDouble(coordVille1[0]);
 		double longitudeVille1 = Double.parseDouble(coordVille1[1]);
@@ -27,7 +24,6 @@ public class Operation {
 		double distance2 = Math.abs(6378*Math.acos(Math.sin(lattitudeVille1)*Math.sin(lattitudeVille2)
 				+Math.cos(lattitudeVille1)*Math.cos(lattitudeVille2)*Math.cos(longitudeVille2-longitudeVille1)));
 		
-		System.out.println(distance2);
 		
 		return distance;
 	}
